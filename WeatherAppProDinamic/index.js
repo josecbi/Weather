@@ -45,9 +45,6 @@ promise
    })
    .catch(error => alert(`Conect your location. ${error}`))
 
-//"https://apis.scrimba.com/openweathermap/data/2.5/weather?q=holguin&units=metric&lang=es"
-
-
 function setBackground (status, ampm) {
     let color = 'linear-gradient(#4786FA, #AAC7FE)'
     if(status === 'Thunderstorm' || status === 'Drizzle' || status === 'Rain' || status === 'Clouds' && ampm === 'd'){
@@ -68,7 +65,7 @@ function setBackground (status, ampm) {
 function setIconTemp(temp) {
     return temp < 15 
         ? 'icons/thermometer-snow.svg'
-        : temp > 25
+        : temp > 28
         ? 'icons/thermometer-sun.svg'
         : 'icons/thermometer-low.svg'
 }
