@@ -40,8 +40,11 @@ span {
     max-width: 360px;       
 }
 
-.icon {
-    margin-right: 0.5em;    
+.bi {
+    margin-right: 0.5em;
+    color: rgb(103, 103, 105); 
+    text-shadow: none;   
+    font-size: 1.5rem;
 }
 
 .bottom-data {

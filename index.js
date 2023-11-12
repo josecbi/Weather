@@ -36,7 +36,7 @@ promise
                 document.getElementById('current-description').innerHTML = `
                     ${descriptionTemp} <img src=${iconWeather}>
                 `
-                document.getElementById('first-description').innerHTML = `<img class="icon" src="${iconTemp}"> Sensación`
+                document.getElementById('first-description').innerHTML = `<i class="${iconTemp}"></i> Sensación`
                 document.getElementById('feels-like').innerHTML = `${feeling}º`
                 document.getElementById('humidity').textContent = `${humidity}%`
                 document.getElementById('wind-speed').textContent = `${windSpeed} m/s`
@@ -64,8 +64,8 @@ function setBackground (status, ampm) {
 
 function setIconTemp(temp) {
     return temp < 15 
-        ? 'icons/thermometer-snow.svg'
+        ? /*'icons/thermometer-snow.svg'*/ 'bi bi-thermometer-snow'
         : temp > 28
-        ? 'icons/thermometer-sun.svg'
-        : 'icons/thermometer-low.svg'
+        ? /*'icons/thermometer-sun.svg'*/  'bi bi-thermometer-sun'
+        : /*'icons/thermometer-low.svg'*/  'bi bi-thermometer-low'
 }
